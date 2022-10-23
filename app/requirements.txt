@@ -1,0 +1,9 @@
+aiocache==0.11.1
+app==0.0.1
+APScheduler==3.7.0
+httpx==0.18.2
+loguru==0.5.3
+pycoingecko==2.2.0
+Scweet==1.6
+selenium==4.0.0
+webdriver_manager==3.5.2
