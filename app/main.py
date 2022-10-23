@@ -44,9 +44,11 @@ async def startup():
 
 
 if __name__ == "__main__":
-    asyncio.get_running_loop().run_until_complete(startup())
+    loop = asyncio.new_event_loop()
+    asyncio.set_event_loop(loop)
+    loop.run_until_complete(startup())
     try:
-        asyncio.get_event_loop().run_forever()
+        loop.run_forever()
     except (KeyboardInterrupt, SystemExit) as e:
         logger.exception(e)
     finally:
