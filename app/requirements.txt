@@ -7,3 +7,4 @@ pycoingecko==2.2.0
 Scweet==1.6
 selenium==4.0.0
 webdriver_manager==3.5.2
+python-telegram-bot==13.14
